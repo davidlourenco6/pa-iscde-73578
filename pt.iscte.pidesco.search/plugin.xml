@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="coder" name="coder" schema="schema/coder.exsd"/>
+   <extension
+         id="generator"
+         name="Generator"
+         point="pt.iscte.pidesco.view">
+      <view
+            class="pt.iscte.pidesco.generator.internal.GeneratorView"
+            icon="find_obj.gif">
+      </view>
+   </extension>
+   <extension
+         point="pt.iscte.pidesco.generator.coder">
+      <coder
+            class="pt.iscte.pidesco.generator.internal.Coder">
+      </coder>
+   </extension>
+
+</plugin>
